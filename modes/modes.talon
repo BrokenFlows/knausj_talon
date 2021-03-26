@@ -1,7 +1,7 @@
 #defines the various mode commands
 mode: all
 -
-welcome back:
+wake all:
     user.mouse_wake()
     user.history_enable()
     user.talon_mode()
