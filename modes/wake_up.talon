@@ -11,6 +11,8 @@ mode: all
     user.homophones_hide()
     user.help_hide()
     user.mouse_sleep()
+    mode.disable("face")
+    mode.disable("noise")
     speech.disable()
     user.engine_sleep()
 ^talon sleep$: speech.disable()
