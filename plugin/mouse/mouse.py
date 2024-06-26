@@ -124,6 +124,21 @@ class Actions:
 
     def mouse_wake():
         """Enable control mouse, zoom mouse, and disables cursor"""
+        actions.tracking.control_zoom_toggle(False)
+        actions.tracking.control_toggle(False)
+        actions.tracking.control1_toggle(False)
+
+        actions.tracking.control_toggle(True)
+
+        if settings.get("user.mouse_wake_hides_cursor"):
+            show_cursor_helper(False)
+
+    def zoom_mouse_wake():
+        """Enable control mouse, zoom mouse, and disables cursor"""
+        actions.tracking.control_zoom_toggle(False)
+        actions.tracking.control_toggle(False)
+        actions.tracking.control1_toggle(False)
+
         actions.tracking.control_zoom_toggle(True)
 
         if settings.get("user.mouse_wake_hides_cursor"):
